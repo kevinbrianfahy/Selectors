@@ -2,8 +2,8 @@
 /*****************************    CHECKLIST    ******************************/
 /****************************************************************************
 
-id selector
-class selector
+x id selector
+x class selector
 attribute selector
 
 relationship selectors:
@@ -12,18 +12,203 @@ relationship selectors:
   sibling
 
 pseudo-selectors
-  :hover
-  :first-child
-  :last-child
-  :nth-child
-  :nth-last-child
-  :nth-of-type
-  :first-of-type
-  :last-of-type
+    :hover
+  x :first-child
+    :last-child
+  x :nth-child
+    :nth-last-child
+    :nth-of-type
+    :first-of-type
+    :last-of-type
 
 pseudo-elements
   :before
   :after
 
 ****************************************************************************/
-
+#wrapper {
+  background: #CC6600;
+}
+#quadrant-nw {
+  background: white;
+  border-top: 2px solid black;
+  border-left:2px solid black;
+  border-right: 7px solid black;
+  border-bottom: 10px solid black;
+  margin: 5px;
+}
+#quadrant-ne {
+  background: white;
+  border-top: 2px solid black;
+  border-left:2px solid black;
+  border-right: 6px solid black;
+  border-bottom: 8px solid black;
+  margin: 5px;
+}
+#quadrant-sw {
+  background: white;
+  border-top: 4px solid black;
+  border-left:2px solid black;
+  border-right: 8px solid black;
+  border-bottom: 5px solid black;
+  margin: 5px;
+}
+#quadrant-se {
+  background: #CC6600;
+  margin: 5px;
+}
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+.cell {
+  border:none;
+}
+tbody tr:nth-child(3) .cell:nth-child(4) {
+  background: linear-gradient(45deg, #CFCFCF, #FFFFFF, #CFCFCF);
+}
+tbody tr:nth-child(3) .cell:nth-child(5) {
+  background: linear-gradient(135deg, #CFCFCF, #FFFFFF, #CFCFCF);
+}
+tbody tr:nth-child(4) .cell:nth-child(4) {
+  background: linear-gradient(135deg, #CFCFCF, #FFFFFF, #CFCFCF);
+}
+tbody tr:nth-child(4) .cell:nth-child(5) {
+  background: linear-gradient(45deg, #CFCFCF, #FFFFFF, #CFCFCF);
+}
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+tbody tr:nth-child(2) .cell:nth-child(3) {
+  background: linear-gradient(45deg, #8A8A8A, #CFCFCF, #8A8A8A);
+}
+tbody tr:nth-child(2) .cell:nth-child(4) {
+  background: linear-gradient(0deg, #CFCFCF, #8A8A8A);
+}
+tbody tr:nth-child(2) .cell:nth-child(5) {
+  background: linear-gradient(0deg, #CFCFCF, #8A8A8A);
+}
+tbody tr:nth-child(2) .cell:nth-child(6) {
+  background: linear-gradient(135deg, #8A8A8A, #CFCFCF, #8A8A8A);
+}
+tbody tr:nth-child(3) .cell:nth-child(3) {
+  background: linear-gradient(to left, #CFCFCF, #8A8A8A);
+}
+tbody tr:nth-child(3) .cell:nth-child(6) {
+  background: linear-gradient(to right, #CFCFCF, #8A8A8A);
+}
+tbody tr:nth-child(4) .cell:nth-child(3) {
+  background: linear-gradient(to left, #CFCFCF, #8A8A8A);
+}
+tbody tr:nth-child(4) .cell:nth-child(6) {
+  background: linear-gradient(to right, #CFCFCF, #8A8A8A);
+}
+tbody tr:nth-child(5) .cell:nth-child(3) {
+  background: linear-gradient(135deg, #8A8A8A, #CFCFCF, #8A8A8A);
+}
+tbody tr:nth-child(5) .cell:nth-child(4) {
+  background: linear-gradient(180deg, #CFCFCF, #8A8A8A);
+}
+tbody tr:nth-child(5) .cell:nth-child(5) {
+  background: linear-gradient(180deg, #CFCFCF, #8A8A8A);
+}
+tbody tr:nth-child(5) .cell:nth-child(6) {
+  background: linear-gradient(45deg, #8A8A8A, #CFCFCF, #8A8A8A);
+}
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+tbody tr:nth-child(1) .cell:nth-child(2) {
+  background: linear-gradient(45deg, #454545, #8A8A8A, #454545);
+}
+tbody tr:nth-child(1) .cell:nth-child(3) {
+  background: linear-gradient(0deg, #8A8A8A, #454545);
+}
+tbody tr:nth-child(1) .cell:nth-child(4) {
+  background: linear-gradient(0deg, #8A8A8A, #454545);
+}
+tbody tr:nth-child(1) .cell:nth-child(5) {
+  background: linear-gradient(0deg, #8A8A8A, #454545);
+}
+tbody tr:nth-child(1) .cell:nth-child(6) {
+  background: linear-gradient(0deg, #8A8A8A, #454545);
+}
+tbody tr:nth-child(1) .cell:nth-child(7) {
+  background: linear-gradient(135deg, #454545, #8A8A8A, #454545);
+}
+tbody tr:nth-child(2) .cell:nth-child(2) {
+  background: linear-gradient(270deg, #8A8A8A, #454545);
+}
+tbody tr:nth-child(2) .cell:nth-child(7) {
+  background: linear-gradient(90deg, #8A8A8A, #454545);
+}
+tbody tr:nth-child(3) .cell:nth-child(2) {
+  background: linear-gradient(270deg, #8A8A8A, #454545);
+}
+tbody tr:nth-child(3) .cell:nth-child(7) {
+  background: linear-gradient(90deg, #8A8A8A, #454545);
+}
+tbody tr:nth-child(4) .cell:nth-child(2) {
+  background: linear-gradient(270deg, #8A8A8A, #454545);
+}
+tbody tr:nth-child(4) .cell:nth-child(7) {
+  background: linear-gradient(90deg, #8A8A8A, #454545);
+}
+tbody tr:nth-child(5) .cell:nth-child(2) {
+  background: linear-gradient(270deg, #8A8A8A, #454545);
+}
+tbody tr:nth-child(5) .cell:nth-child(7) {
+  background: linear-gradient(90deg, #8A8A8A, #454545);
+}
+tbody tr:nth-child(6) .cell:nth-child(2) {
+  background: linear-gradient(135deg, #454545, #8A8A8A, #454545);
+}
+tbody tr:nth-child(6) .cell:nth-child(3) {
+  background: linear-gradient(180deg, #8A8A8A, #454545);
+}
+tbody tr:nth-child(6) .cell:nth-child(4) {
+  background: linear-gradient(180deg, #8A8A8A, #454545);
+}
+tbody tr:nth-child(6) .cell:nth-child(5) {
+  background: linear-gradient(180deg, #8A8A8A, #454545);
+}
+tbody tr:nth-child(6) .cell:nth-child(6) {
+  background: linear-gradient(180deg, #8A8A8A, #454545);
+}
+tbody tr:nth-child(6) .cell:nth-child(7) {
+  background: linear-gradient(45deg, #454545, #8A8A8A, #454545);
+}
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+thead .cell:first-child {
+  background: linear-gradient(45deg, #000000, #454545, #000000);
+}
+thead .cell:last-child {
+  background: linear-gradient(135deg, #000000, #454545, #000000);
+}
+thead .cell {
+  background: linear-gradient(0deg, #454545, #454545 20%, #000000);
+}
+tbody tr .cell:nth-child(1) {
+  background: linear-gradient(270deg, #454545, #454545 20%, #000000);
+}
+tbody tr .cell:nth-child(8) {
+  background: linear-gradient(90deg, #454545, #454545 20%, #000000);
+}
+tbody tr:nth-child(7) .cell {
+  background: linear-gradient(180deg, #454545, #454545 20%, #000000);
+}
+tbody tr:nth-child(7) .cell:nth-child(1) {
+  background: linear-gradient(135deg, #000000, #454545, #000000);
+}
+tbody tr:nth-child(7) .cell:nth-child(8) {
+  background: linear-gradient(45deg, #000000, #454545, #000000);
+}
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
