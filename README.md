@@ -31,3 +31,4 @@ instructor will provide a clean one for you at the demo (so you can't depend on
 your changes).
 
 CSS animation and other shenanigans are allowed.
+# Selectors
